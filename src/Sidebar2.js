@@ -16,7 +16,7 @@ function Sidebar2() {
             </div>
             <div>
                 <ul>
-                    <li></li>
+                    <li>123</li>
                     <li></li>
                     <li></li>
                     <li></li>
