@@ -1,0 +1,16 @@
+.Sidebar1Style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100px;
+    height: 100vh;
+    background-color: black;
+    z-index: 2;
+}
+
+.Sidebar1Style>div {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.Sidebar2Style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+    z-index: 2;
+}
+
+.Sidebar2Style.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Sidebar2Style>div {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
