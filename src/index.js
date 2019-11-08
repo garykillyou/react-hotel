@@ -13,6 +13,7 @@ import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faLongArrowAltDown, faGlobe, faChevronDown, faLongArrowAltUp } from '@fortawesome/free-solid-svg-icons'
+import CampSite from './Test'
 
 library.add(fab, faHome, faLongArrowAltDown, faGlobe, faChevronDown, faLongArrowAltUp);
 
@@ -30,6 +31,7 @@ const Root = () => {
     return (
         <IntlProvider locale={locale} key={locale} defaultLocale="en" messages={messages}>
             <ToolsNavbar setLocale={setLocale} />
+            <CampSite />
             <RSC onScroll={onScroll} disableTracksWidthCompensation={true} style={{ width: "100%", height: "100vh" }}>
                 {/*<Area1 />*/}
                 <Area2 />

@@ -14,15 +14,12 @@ function Sidebar2() {
                     style={{ fontSize: '50px' }}
                     className="mt-2" />
             </div>
-            <div>
-                <ul>
-                    <li>123</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div className="menu">
+                <div>01. 立即訂房</div>
+                <div>02. 民宿介紹</div>
+                <div>03. 房間介紹</div>
+                <div>04. 交通資訊</div>
+                <div>05. 聯絡我們</div>
             </div>
             <div>
                 <div onClick={ScrollToArea2}>
