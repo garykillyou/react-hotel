@@ -18,7 +18,7 @@ function Sidebar2() {
                 <div>01. 立即訂房</div>
                 <div>02. 民宿介紹</div>
                 <div>03. 房間介紹</div>
-                <div>04. 交通資訊</div>
+                <div><a href="#googleMap">04. 交通資訊</a></div>
                 <div>05. 聯絡我們</div>
             </div>
             <div>

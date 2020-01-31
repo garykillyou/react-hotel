@@ -13,7 +13,7 @@ import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faLongArrowAltDown, faGlobe, faChevronDown, faLongArrowAltUp } from '@fortawesome/free-solid-svg-icons'
-import CampSite from './Test'
+// import CampSite from './Test'
 
 library.add(fab, faHome, faLongArrowAltDown, faGlobe, faChevronDown, faLongArrowAltUp);
 
@@ -21,7 +21,7 @@ const Root = () => {
     const [locale, setLocale] = useState(navigator.language);
     let messages = locale.includes('en') ? en : zh;
 
-    const onScroll = (scrollValues, prevScrollValues) => {
+    const onScroll = (scrollValues) => {
         if (scrollValues.scrollTop > scrollValues.clientHeight ) {
             document.getElementById("Sidebar2").classList.add("fixed");
         }
@@ -31,9 +31,8 @@ const Root = () => {
     return (
         <IntlProvider locale={locale} key={locale} defaultLocale="en" messages={messages}>
             <ToolsNavbar setLocale={setLocale} />
-            <CampSite />
             <RSC onScroll={onScroll} disableTracksWidthCompensation={true} style={{ width: "100%", height: "100vh" }}>
-                {/*<Area1 />*/}
+                <Area1 />
                 <Area2 />
             </RSC>
         </IntlProvider>
